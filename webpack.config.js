@@ -1,7 +1,10 @@
+const path = require("path");
+
 module.exports = {
-  entry: "frontend/index.jsx",
+  context: __dirname,
+  entry: "./frontend/BenchBnb.jsx",
   output: {
-    path: "app/assets/javascripts",
+    path: path.join(__dirname, 'app', 'assets', 'javascripts'),
     filename: "bundle.js",
   },
   module: {
